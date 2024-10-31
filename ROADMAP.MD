@@ -1,0 +1,35 @@
+### ROADMAP
+Tarefas criadas e executadas durante o desenvolvimento:
+- [x] **Autenticação e Autorização Básica**:
+    - [x] **Registro de usuários** com email e senha.
+    - [x] **Autenticação** via Firebase.
+    - [x] Implementar **autenticação baseada em tokens JWT** para comunicação segura.
+    - [x] Criação de **Guard** para verificar as rotas.
+- [x] **Gerenciamento de Tarefas**:
+    - [x] CRUD de tarefas associadas ao usuário autenticado.
+    - [x] Armazenamento de tarefas no **Firebase Firestore**.
+    - [x] Campos das tarefas:
+        - `id`: identificador único.
+        - `title`: título da tarefa.
+        - `description`: descrição.
+        - `status`: (pendente, concluída). 
+	        - ENUM: PENDING, DONE
+        - `dueDate`: data de vencimento.
+        - `userId`: Id do usuario
+    - [x] Funcionalidade de **filtro básico** por status e data de vencimento.
+- [x]  **Arquitetura**:
+    - [x] Backend em **TypeScript**.
+    - [x] Servidor Nest
+    - [x] Clean Arc | Clean Code
+    - [x] S from **s.o.l.i.d**
+    - [x] **Documentação da API** RESTful usando Swagger ou outra ferramenta similar.
+- [x] **Segurança**:
+    - [x] Validar permissões dos usuários para acesso, editar ou excluir suas próprias tarefas.
+    - [x] Configurar regras básicas de segurança no **Firebase Firestore**.
+- [x] **Frontend Simples com Vue.js 3**:
+    - [x] Desenvolver tela de Login e Registro
+    - [x] Desenvolver tela de Tarefa.
+    - [x] Listar tarefa.
+    - [x] Pesquisar melhores práticas para Vue.
+    - [x] Separar `store` de user e task.
+    - [x] métodos de criação, edição e deleção de tarefas.
